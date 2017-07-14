@@ -1,5 +1,4 @@
-$('#formID').on('submit',(function(e) {
-  e.preventDefault();
+function add(){
   var data = new FormData(this);
 
   $.ajax({
@@ -15,5 +14,5 @@ $('#formID').on('submit',(function(e) {
       error: function(jqXHR, textStatus, errorThrown) {
         console.log(textStatus, errorThrown);
       }
-  }); 
-}));
+  });
+}
